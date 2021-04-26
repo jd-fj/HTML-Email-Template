@@ -16,4 +16,3 @@ GitHub user [cemerson](https://gist.github.com/cemerson/4495931#file-email-html)
 [Email on Acid](http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_sheep_of_html_email_design) blog post
 
 Source images provided in original email
-
