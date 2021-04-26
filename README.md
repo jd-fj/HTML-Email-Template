@@ -6,7 +6,9 @@
 Recreate an email with HTML using source images provided
 
 ## Preview
-[See a preview rendered with a live server here](https://taylulz.github.io/HTML-Email-Template/)
+* [See a preview rendered with a live server here](https://taylulz.github.io/HTML-Email-Template/). 
+
+* For just the HTML, checkout the [index.html](/index.html)
 
 ### Resources used
 GitHub user [cemerson](https://gist.github.com/cemerson/4495931#file-email-html)'s documentation on HTML
