@@ -10,6 +10,7 @@ See the HTML [rendered with a live server here](https://taylulz.github.io/HTML-E
 
 ### Prompt Images
 Images provided in prompt:
+
 ![source1](source1.png)
 ![source2](source2.png)
 
