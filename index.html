@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Cambia Email Layout 1</title>
+	<style type="text/css">
+    
+        @import url("https://p.typekit.net/p.css?s=1&k=dbm5ogu&ht=tk&f=139.140.175.176.143.144.147.148.156.157.161.162.28908.28909&a=8644359&app=typekit&e=css");
+
+        @font-face {
+            font-family:"proxima-nova";
+            src:url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:700;
+        }
+        @font-face {
+            font-family:"proxima-nova";
+            src:url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:400;
+        }
+
+        .tk-proxima-nova { font-family: "proxima-nova",sans-serif; }
+
+		#outlook a {padding:0;} 
+		body{font-family:"proxima-nova"; width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+		.ExternalClass {width:100%;}
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} 
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+		
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+		a img {border:none;}
+		.image_fix {display:block;}
+		p {margin: 1em 0;}
+		h1, h2, h3, h4, h5, h6 {color: black !important;}
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: blue !important;}
+		h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+			color: red !important;
+		}
+		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+			color: purple !important;
+		}
+		table td {border-collapse: collapse;}
+        table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+		a {color: #048ABF;}
+		a:link { color: #048ABF; }
+		a:visited { color: blue; }
+		a:hover { color: rgb(255, 255, 255); }
+
+
+		@media only screen and (max-device-width: 480px) {
+
+			/* A nice and clean way to target phone numbers you want clickable and avoid a mobile phone from linking other numbers that look like, but are not phone numbers.  Use these two blocks of code to "unstyle" any numbers that may be linked.  The second block gives you a class to apply with a span tag to the numbers you would like linked and styled.
+			Inspired by Campaign Monitor's article on using phone numbers in email: http://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/.
+			Step 1 (Step 2: line 224)
+			*/
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: black; 
+						pointer-events: none;
+						cursor: default;
+					}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: orange !important; 
+						pointer-events: auto;
+						cursor: default;
+					}
+		}
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+			/* You guessed it, ipad (tablets, smaller screens, etc) */
+
+			/* Step 1a: Repeating for the iPad */
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: blue;
+						pointer-events: none;
+						cursor: default;
+					}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: orange !important;
+						pointer-events: auto;
+						cursor: default;
+					}
+		}
+
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+			/* Put your iPhone 4g styles in here */
+		}
+
+		/* Following Android targeting from:
+		http://developer.android.com/guide/webapps/targeting.html
+		http://pugetworks.com/2011/04/css-media-queries-for-targeting-different-mobile-devices/  */
+		@media only screen and (-webkit-device-pixel-ratio:.75){
+			/* Put CSS for low density (ldpi) Android layouts in here */
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1){
+			/* Put CSS for medium density (mdpi) Android layouts in here */
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1.5){
+			/* Put CSS for high density (hdpi) Android layouts in here */
+		}
+		/* end Android targeting */
+	</style>
+
+	<!-- Targeting Windows Mobile -->
+	<!--[if IEMobile 7]>
+	<style type="text/css">
+	</style>
+	<![endif]-->
+
+	<!-- ***********************************************
+	END MOBILE TARGETING
+	************************************************ -->
+
+	<!--[if gte mso 9]>
+	<style>
+		/* Target Outlook 2007 and 2010 */
+	</style>
+	<![endif]-->
+</head>
+<body>
+	<!-- wrapper -->
+	<table style="background-color: rgb(252, 254, 255);" border="0" width="600" cellpadding="0" cellspacing="0" align="left">
+        <tr>
+            <td>
+            
+            <!-- section 1 -->
+            <table cellpadding="20" cellspacing="0" border="0" align="left">
+                <tr>
+                    <td>
+                        <a href="/">
+                            <img class="image_fix" src="bcbs_logo.png" alt="Regence logo" width="x" height="x" style="display: block;" border="0" />
+                        </a>
+                    </td>
+                    <td width="320"></td>
+                    <td style="color:rgb(146, 150, 157)">SIGN IN</td>
+                </tr>
+            </table>
+        
+            <table cellpadding="20">
+                <tr>
+                    <td>
+                            <img class="image_fix" src="feature.jpg" alt="feature image" width="640px" height="x" style="display: block;" border="0" />
+                    </td>  
+                </tr>
+            </table>
+            
+            <table width="660" cellpadding="20" align="left">
+                <tr style="line-height: 55px;">
+                    <th style="color: #048ABF; font-size:50px;" align="left">Knowing your options for surgery and childbirth</th>
+                </tr>
+                <tr>
+                    <td style="color: #048ABF; text-decoration: none; line-height: 23px; font-size: 20px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </td>
+                </tr>
+                <tr align="left">
+                    <th style="padding-top: 20px;"><a style="padding:10px; color: white; background-color: #048ABF; text-decoration: none;" href="https://www.regence.com/member/health-lifestyle/surgery-birth-centers" title="Learn more" target="_blank" type="white"><span class="href-button-text">L E A R N  &nbsp;  M O R E</span></a></th>
+                </tr>
+            </table>
+
+            <!-- section 2 -->
+            <table>
+                <tr>
+                    <td width="300">
+            
+                        <table cellpadding="20">
+                            <tr>
+                                <td>
+                                        <img class="image_fix" src="story.png" alt="Pre-authorization story" width="x" height="x" style="display: block;" border="0" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="300">
+            
+                        <table border="0" width="300" cellpadding="10" cellspacing="0" align="left">
+                            <tr style="line-height: 28px;">
+                                <td style="font-size:30px; color: rgb(62, 62, 62);" align="left">Pre-authorization: <br/> What is it and why does it matter?</td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    <img class="image_fix" src="blue_bar.png" alt="feature image" width="x" height="x" style="display: block;" border="0"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size:15px; color:rgb(146, 150, 157)">
+                                    Pre-authorization is when a procedure needs to be reviewed by your health plan before you receive treatment. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </td>
+                            </tr>
+                            <tr align="left">
+                                <td style="padding-top: 20px;"><a style="padding:10px; color: white; background-color: #048ABF; text-decoration: none;" href="https://www.regence.com/member/health-lifestyle/surgery-birth-centers" title="Learn more" target="_blank" type="white"><span class="href-button-text">Find out more</span></a></td>
+                            </tr>
+                            <tr><td></td></tr>
+                        </table>
+            
+                    </td>
+                </tr>
+            </table>
+
+
+
+            </td>
+        </tr>
+	</table>
+	<!-- End of wrapper table -->
+</body>
+</html>
