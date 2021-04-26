@@ -21,3 +21,5 @@ GitHub user [cemerson](https://gist.github.com/cemerson/4495931#file-email-html)
 
 Source images provided in original email
 
+## Final Message
+Thank you for taking the time to view my work. I've already learned a ton from this prompt and am grateful for the opportunity to present it to you! 
